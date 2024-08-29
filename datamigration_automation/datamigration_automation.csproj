@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Tests\1.Location\" />
+    <Folder Include="Tests\1.LocationUpdateSite\" />
+    <Folder Include="Tests\1.LocationUpdateTeam\" />
+    <Folder Include="Tests\1.SystemUser\" />
+    <Folder Include="Tests\10.Enquiry\" />
+    <Folder Include="Tests\11.Agreement\" />
+    <Folder Include="Tests\12.DecisionMaker\" />
+    <Folder Include="Tests\13.AgreementFundedSupport\" />
+    <Folder Include="Tests\14.AgreementInvoice\" />
+    <Folder Include="Tests\15.Event\" />
+    <Folder Include="Tests\16.BookableResource\" />
+    <Folder Include="Tests\17.Property\" />
+    <Folder Include="Tests\17.PropertyUpdateAccReq\" />
+    <Folder Include="Tests\18.AgreementSupportPlan\" />
+    <Folder Include="Tests\19.Workorder\" />
+    <Folder Include="Tests\20.ResourceRequirement\" />
+    <Folder Include="Tests\21.AgreementGoal - Generic\" />
+    <Folder Include="Tests\21.AgreementGoal\" />
+    <Folder Include="Tests\22.Notes\" />
+    <Folder Include="Tests\23.RestrictedPractice\" />
+    <Folder Include="Tests\24.Medication\" />
+    <Folder Include="Tests\25.Review\" />
+    <Folder Include="Tests\26.Priority\" />
+    <Folder Include="Tests\27.Activity\" />
+    <Folder Include="Tests\28.Connection\" />
+    <Folder Include="Tests\3.Queue\" />
+    <Folder Include="Tests\4.ProductPriceLevel\" />
+    <Folder Include="Tests\5.Account\" />
+    <Folder Include="Tests\5.AccountUpdate\" />
+    <Folder Include="Tests\6.Contact\" />
+    <Folder Include="Tests\6.ContactUpdate\" />
+    <Folder Include="Tests\7.AboutMe\" />
+    <Folder Include="Tests\8.RiskProfile\" />
+    <Folder Include="Tests\9.SLA\" />
+    <Folder Include="Tests\Master\" />
+    <Folder Include="Tests\RelationTables_v1\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
