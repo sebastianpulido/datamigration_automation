@@ -24,7 +24,7 @@ internal class DBQueryExecutor(string sqlQuery, string connectionString)
         }
         catch (Exception ex)
         {
-            Console.WriteLine("An error occurred: " + ex.Message);
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
         
         return dataTable;

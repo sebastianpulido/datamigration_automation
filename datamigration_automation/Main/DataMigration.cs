@@ -17,6 +17,13 @@ public class DataMigration
     {
         _dbParameters = new DBParameters();
     }
+
+    public void StartValidation()
+    {
+        TestReport testReport = new();
+        testReport.GenerateValidationReport();
+    }
+
     public static void Main(string[] args)
     {
         DataMigration main = new();
