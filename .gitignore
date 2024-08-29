@@ -1,6 +1,7 @@
 # Ignore build output
 bin/
 obj/
+.vs/
 
 # Ignore user-specific files
 *.suo
