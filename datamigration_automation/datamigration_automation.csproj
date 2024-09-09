@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Tests\1.Location\" />
     <Folder Include="Tests\1.LocationUpdateSite\" />
     <Folder Include="Tests\1.LocationUpdateTeam\" />
     <Folder Include="Tests\1.SystemUser\" />
@@ -44,6 +43,7 @@
     <Folder Include="Tests\9.SLA\" />
     <Folder Include="Tests\Master\" />
     <Folder Include="Tests\RelationTables_v1\" />
+    <Folder Include="Utilities\Config\" />
   </ItemGroup>
 
   <ItemGroup>

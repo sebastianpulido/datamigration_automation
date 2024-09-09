@@ -32,5 +32,9 @@ public class DataMigration
 
         DataTable table = new DBQueryExecutor("select * from dbo.Territory;", main._dbParameters.ConnectionString_Raw).FetchData();
         Console.WriteLine("rows: " + table.Rows.Count);
+
+        DBSchemaValidationHelper dBSchemaValidationHelper = new(main._dbParameters.ConnectionString_Raw, main._dbParameters.ConnectionString_Curate);
+        var schemaValidation = dBSchemaValidationHelper.CompareSchemas("dbo.Territory", "dbo.Territory");
+        Console.WriteLine($"schemaValidation: {schemaValidation}");
     }
 }
