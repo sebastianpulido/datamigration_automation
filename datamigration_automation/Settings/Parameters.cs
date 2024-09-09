@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace datamigration_automation.Settings;
 
-internal class Parameters
+public class Parameters
 {
     public IConfigurationRoot Configuration { get; }
 

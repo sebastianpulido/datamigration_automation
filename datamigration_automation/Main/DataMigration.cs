@@ -11,7 +11,7 @@ namespace datamigration_automation.Main;
 
 public class DataMigration
 {
-    private readonly DBParameters _dbParameters;
+    public readonly DBParameters _dbParameters;
 
     public DataMigration()
     {
@@ -24,7 +24,7 @@ public class DataMigration
         testReport.GenerateValidationReport();
     }
 
-    public static void Main(string[] args)
+    /*public static void Main(string[] args)
     {
         DataMigration main = new();
         DBConnectionHelper dBConnectionHelper = new(main._dbParameters.ConnectionString_Raw);
@@ -36,5 +36,5 @@ public class DataMigration
         DBSchemaValidationHelper dBSchemaValidationHelper = new(main._dbParameters.ConnectionString_Raw, main._dbParameters.ConnectionString_Curate);
         var schemaValidation = dBSchemaValidationHelper.CompareSchemas("dbo.Territory", "dbo.Territory");
         Console.WriteLine($"schemaValidation: {schemaValidation}");
-    }
+    }*/
 }

@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace datamigration_automation.Settings;
 
-internal class DBParameters : Parameters
+public class DBParameters : Parameters
 {
     public string ConnectionString_Raw { get; set; }
     public string ConnectionString_Curate { get; set; }

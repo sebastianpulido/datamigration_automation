@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace datamigration_automation.Tests;
 
-internal class BaseTestCase
+[TestFixture]
+[Parallelizable]
+public class BaseTestCase
 {
     public bool TestCaseResult = false;
 
@@ -20,4 +23,13 @@ internal class BaseTestCase
 
     public string Schema2TableName { get; set; } = string.Empty;
 
+    [SetUp]
+    public void OnBaseStart()
+    {
+    }
+
+    [TearDown]
+    public void OnBaseFinish()
+    {
+    }
 }
