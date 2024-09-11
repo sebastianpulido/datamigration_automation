@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using datamigration_automation.Main;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,9 @@ namespace datamigration_automation.Tests;
 [Parallelizable]
 public class BaseTestCase
 {
+    protected DataMigration DB { get; } = new DataMigration();
+
+
     public bool TestCaseResult = false;
 
     public string TestCaseID { get; set; } = string.Empty;
