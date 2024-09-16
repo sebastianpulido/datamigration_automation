@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace datamigration_automation.Utilities;
 
-internal class QueryLibrary
+static class QueryLibrary
 {
+    public static readonly string SQL_GET_TABLE_SCHEMA = "SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME =";
 }

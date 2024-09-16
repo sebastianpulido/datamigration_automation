@@ -14,9 +14,6 @@ public class BaseTestCase
 {
     protected DataMigration DB { get; } = new DataMigration();
 
-
-    public bool TestCaseResult = false;
-
     public string TestCaseID { get; set; } = string.Empty;
 
     public string TestCaseName { get; set; } = string.Empty;
